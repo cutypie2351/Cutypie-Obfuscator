@@ -6,8 +6,6 @@ This library helps protect your code against reverse engineering by implementing
 - **String Encryption**: Compile-time string obfuscation
 - **Control Flow Obfuscation**: Complex flow patterns in disassemblers
 - **Header-Only**: Easy integration with no dependencies
-- **Zero Runtime Overhead**: Compile-time encryption
-- **Customizable**: Configurable secret keys and patterns
 
 
 ## ✨ The Result:
@@ -32,7 +30,6 @@ int main() {
 ```
 ## 📋 Requirements
 - C++17 or higher
-- Windows platform
 - GCC, G++ or MSVC compiler (recommended)
 
 ## ⚙️ Configuration
@@ -56,10 +53,3 @@ For Decrypt (This process decrypt the string at runtime only):
 ```cpp
 const auto decrypted = encrypted.decrypt();
 ```
-Designed for x86/x64 Windows platforms
-
-Technical Details
-
-Uses template metaprogramming for compile-time encryption
-Implements XOR encryption with custom masking
-Creates complex control flow patterns to obstruct reverse engineering attempts
