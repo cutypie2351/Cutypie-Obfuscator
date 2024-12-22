@@ -9,7 +9,7 @@
 /*
     Notes*!!!:
     1. To make an control flow obfuscation in ida or any disassembler, call the 'Initialize' Macro in the first line of your main code!
-    2. Define your own secret key (must to be 15 characters length
+    2. Define your own secret key (must to be 15 characters length)
  */
 
 
