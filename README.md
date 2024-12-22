@@ -1,6 +1,6 @@
 Cutypie-Obfuscator
-A C++ header-only library for string obfuscation and control flow complexity for a static analysis disassembler tools like ida, binaryninja and ghidra. 
-This tool helps protect your code against reverse engineering by implementing compile-time string encryption and runtime control flow obfuscation.
+A C++ header-only library for string obfuscation and control flow for a static analysis disassembler tools like ida, binaryninja, ghidra and more. 
+This library helps protect your code against reverse engineering by implementing compile-time string encryption and runtime control flow obfuscation.
 
 
 ## ✨ Features
