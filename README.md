@@ -10,27 +10,40 @@ Customizable secret key
 Creates complex control flow graphs in disassemblers
 
 Usage
-cppCopy#include "cutypie_obfuscator.h"
+
+## 🚀 Quick Start
+```cpp
+#include "cutypie_obfuscator.h"
 
 int main() {
     // Initialize control flow obfuscation
     Initialize();
 
-    // Encrypt string at compile time, decrypt at runtime
-    constexpr auto encrypted = C_OBF("Hello, World!");
+    // Encrypt strings at compile-time
+    auto encrypted = C_OBF("Hello, World!");
     const char* decrypted = encrypted.decrypt();
     
     return 0;
 }
-Configuration
+```
+## 📋 Requirements
+- C++17 or higher
+- Windows platform
+- GCC, G++ or MSVC compiler (recommended)
 
-Set your custom secret key in the header (must be 15 characters):
+## ⚙️ Configuration
+Set your custom secret key in the header:
+```cpp
+// Must be exactly 15 characters
+constexpr char Secret_Key[] = "MySecretKey1234";
+```
+Set the Initialize Macro to enable control flow obfuscation
+```cpp
+int main() {
+    // Initialize control flow obfuscation
+    Initialize();
+```
 
-cppCopyconstexpr char Secret_Key[] = "MySecretKey1234";
-Notes
-
-Call Initialize() macro at the start of your main code for control flow obfuscation
-Secret key must be exactly 15 characters long
 Designed for x86/x64 Windows platforms
 
 Technical Details
