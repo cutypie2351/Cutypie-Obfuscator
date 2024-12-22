@@ -41,13 +41,17 @@ Set your custom secret key in the header file:
 // Must be exactly 15 characters
 constexpr char Secret_Key[] = "MySecretKey1234";
 ```
-Set the Initialize Macro to enable control flow obfuscation
+Set the Initialize Macro in the start of your int main() to enable control flow obfuscation
 ```cpp
 int main() {
     // Initialize control flow obfuscation
     Initialize();
 ```
 
+Use encryption string if you want to:
+```cpp
+auto encrypted = C_OBF("Hello, World!");
+```
 Designed for x86/x64 Windows platforms
 
 Technical Details
