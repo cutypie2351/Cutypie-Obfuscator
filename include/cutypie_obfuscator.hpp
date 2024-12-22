@@ -5,15 +5,16 @@
 #include <array>
 #include <ctime>
 #include <cstdint>
+
 /*
     Notes*!!!:
     1. To make an control flow obfuscation in ida or any disassembler, call the 'Initialize' Macro in the first line of your main code!
     2. Define your own secret key (must to be 15 characters length
  */
 
+
 // define your sercet key here (must to be 16 bit = 15 characters only):
 constexpr char Secret_Key[] = "MySecretKey1234";
-
 
 
 // make the complex process code that is getting implement by the preprocessor.
@@ -114,13 +115,6 @@ private:
     static constexpr std::array<char, n> obfuscate_string(const char(&str)[n], std::index_sequence<indexes...>) {
         return { (static_cast<char>( (str[indexes] ^ (Secret_Key[indexes % k] ^ (0xC2 + 0xAB)))  ))... }; //0xC2 + 0xAB is a custom mask for the encrypt to make it a bit more unreadable
     }
-
-
-
-
-
-
-
 };
 
 // N value is getting initialized by the length of the string argument.
