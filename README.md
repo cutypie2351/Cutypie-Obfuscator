@@ -13,7 +13,7 @@ This tool helps protect your code against reverse engineering by implementing co
 
 ## ✨ The Result:
 <div align="center">
-    <img src="images/example.png" alt="result" width="200"/>
+    <img src="images/example.png" alt="result" width="900"/>
 </div>
 
 ## 🚀 Quick Start
