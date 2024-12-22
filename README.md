@@ -50,7 +50,7 @@ Use encryption string if you want to:
 ```cpp
 constexpr auto encrypted = C_OBF("Hello, World!");
 ```
-For Decrypt (This process decrypt the string at runtime only):
+For Decryption (This process decrypt the string at runtime only):
 ```cpp
 const auto decrypted = encrypted.decrypt();
 ```
