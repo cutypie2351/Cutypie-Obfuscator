@@ -24,7 +24,7 @@ int main() {
     Initialize();
 
     // Encrypt strings at compile-time
-    auto encrypted = C_OBF("Hello, World!");
+    constexpr auto encrypted = C_OBF("Hello, World!");
     const char* decrypted = encrypted.decrypt();
     
     return 0;
@@ -50,7 +50,11 @@ int main() {
 
 Use encryption string if you want to:
 ```cpp
-auto encrypted = C_OBF("Hello, World!");
+constexpr auto encrypted = C_OBF("Hello, World!");
+```
+For Decrypt (This process decrypt the string at runtime only):
+```cpp
+const auto decrypted = encrypted.decrypt();
 ```
 Designed for x86/x64 Windows platforms
 
