@@ -34,6 +34,12 @@ int main() {
 - GCC, G++ or MSVC compiler (recommended)
 
 ## ⚙️ Configuration
+**Disable Optimization First!!!**
+In your Project Properties > C/C++ > Optimization > Whole Program Optimization = set to **"No"** 
+<div align="center">
+    <img src="images/disable.png" alt="result" width="500"/>
+</div>
+
 Set your custom secret key in the header file:
 ```cpp
 // Must be exactly 15 characters
