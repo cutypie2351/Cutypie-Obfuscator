@@ -24,7 +24,7 @@ int main() {
     // Encrypt strings at compile-time
     constexpr auto encrypted = C_OBF("Hello, World!");
     // Decrypt strings at run-time
-    const char* decrypted = encrypted.decrypt();
+    const auto decrypted = encrypted.decrypt();
     
     return 0;
 }
