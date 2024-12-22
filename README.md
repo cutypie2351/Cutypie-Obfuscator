@@ -1,15 +1,20 @@
 Cutypie-Obfuscator
 A C++ header-only library for string obfuscation and control flow complexity for a static analysis disassembler tools like ida, binaryninja and ghidra. 
 This tool helps protect your code against reverse engineering by implementing compile-time string encryption and runtime control flow obfuscation.
-Features
 
-Compile-time string encryption
-Runtime control flow obfuscation
-Header-only implementation
-Customizable secret key
-Creates complex control flow graphs in disassemblers
 
-Usage
+## ✨ Features
+- **String Encryption**: Compile-time string obfuscation
+- **Control Flow Obfuscation**: Complex flow patterns in disassemblers
+- **Header-Only**: Easy integration with no dependencies
+- **Zero Runtime Overhead**: Compile-time encryption
+- **Customizable**: Configurable secret keys and patterns
+
+
+## ✨ The Result:
+<div align="center">
+    <img src="images/result.png" alt="result" width="200"/>
+</div>
 
 ## 🚀 Quick Start
 ```cpp
@@ -32,7 +37,7 @@ int main() {
 - GCC, G++ or MSVC compiler (recommended)
 
 ## ⚙️ Configuration
-Set your custom secret key in the header:
+Set your custom secret key in the header file:
 ```cpp
 // Must be exactly 15 characters
 constexpr char Secret_Key[] = "MySecretKey1234";
