@@ -13,7 +13,7 @@ This library helps protect your code against reverse engineering by implementing
     <img src="images/example.png" alt="result" width="700"/>
 </div>
 
-## 🚀 Quick Start
+## How To Use
 ```cpp
 #include "cutypie_obfuscator.h"
 
@@ -29,11 +29,11 @@ int main() {
     return 0;
 }
 ```
-## 📋 Requirements
+## Requirements
 - C++17 or higher
 - GCC, G++ or MSVC compiler (recommended)
 
-## ⚙️ Configuration
+## Configuration
 **Disable Optimization First!!!**
 In your Project Properties > C/C++ > Optimization > Whole Program Optimization = set to **"No"** 
 <div align="center">
