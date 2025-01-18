@@ -74,7 +74,7 @@ constexpr char Secret_Key[] = "MySecretKey1234";
     } \
 } while(0)
 
-// generating the junk code multiple time to make an overflow in ida
+// generating the junk code multiple time to make an control flow in ida
 #define Initialize() do { \
     COMPLEX_FLOW(); \
     COMPLEX_FLOW(); \
